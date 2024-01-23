@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./fetch-rs/Cargo.toml"
+    ],
+    "rust-analyzer.procMacro.ignored": { "napi-derive": ["napi"] }
+}

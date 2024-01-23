@@ -1,0 +1,21 @@
+{
+  "name": "fetch-rs-linux-arm64-musl",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "fetch-rs.linux-arm64-musl.node",
+  "files": [
+    "fetch-rs.linux-arm64-musl.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "musl"
+  ]
+}

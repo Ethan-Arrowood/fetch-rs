@@ -1,0 +1,15 @@
+{
+  "name": "fetch-rs-darwin-universal",
+  "version": "0.0.0",
+  "os": [
+    "darwin"
+  ],
+  "main": "fetch-rs.darwin-universal.node",
+  "files": [
+    "fetch-rs.darwin-universal.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
