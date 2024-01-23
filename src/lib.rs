@@ -4,31 +4,40 @@
 extern crate napi_derive;
 
 #[napi(object)]
-pub struct Request {
-
-}
+pub struct Request {}
 
 #[napi(object)]
-pub struct RequestInit {
+pub struct RequestInit {}
 
+#[napi(object)]
+pub struct Response {}
+
+#[napi]
+pub async fn fetch_with_str(resource: String) -> napi::Result<Response> {
+  println!("fetching with str {}", resource);
+  Ok(Response {})
 }
 
 #[napi]
-pub fn fetch_with_str(resource: String) -> () {
-  println!("fetching with str {}", resource)
+pub async fn fetch_with_request(resource: Request) -> napi::Result<Response> {
+  println!("fetching with request");
+  Ok(Response {})
 }
 
 #[napi]
-pub fn fetch_with_request(resource: Request) -> () {
-  println!("fetching with request")
+pub async fn fetch_with_str_and_init(
+  resource: String,
+  init: RequestInit,
+) -> napi::Result<Response> {
+  println!("fetching with str and init");
+  Ok(Response {})
 }
 
 #[napi]
-pub fn fetch_with_str_and_init(resource: String, init: RequestInit) -> () {
-  println!("fetching with str and init")
-}
-
-#[napi]
-pub fn fetch_with_request_and_init(resource: Request, init: RequestInit) -> () {
-  println!("fetching with request and init")
+pub async fn fetch_with_request_and_init(
+  resource: Request,
+  init: RequestInit,
+) -> napi::Result<Response> {
+  println!("fetching with request and init");
+  Ok(Response {})
 }

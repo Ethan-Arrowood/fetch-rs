@@ -9,7 +9,10 @@ export interface Request {
 export interface RequestInit {
   
 }
-export function fetchWithStr(resource: string): void
-export function fetchWithRequest(resource: Request): void
-export function fetchWithStrAndInit(resource: string, init: RequestInit): void
-export function fetchWithRequestAndInit(resource: Request, init: RequestInit): void
+export interface Response {
+  
+}
+export function fetchWithStr(resource: string): Promise<Response>
+export function fetchWithRequest(resource: Request): Promise<Response>
+export function fetchWithStrAndInit(resource: string, init: RequestInit): Promise<Response>
+export function fetchWithRequestAndInit(resource: Request, init: RequestInit): Promise<Response>

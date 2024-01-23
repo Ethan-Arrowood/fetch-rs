@@ -4,6 +4,7 @@
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
+  "author": { "name": "Ethan Arrowood", "email": "ethan@arrowood.dev" },
   "napi": {
     "name": "@arrowood.dev/fetch-rs",
     "triples": {
@@ -25,11 +26,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@napi-rs/cli": "^2.18.0",
-    "ava": "^6.0.1"
-  },
-  "ava": {
-    "timeout": "3m"
+    "@napi-rs/cli": "^2.18.0"
   },
   "engines": {
     "node": ">= 18"
@@ -39,7 +36,7 @@
     "build": "napi build --platform --release --js fetch-rs.cjs",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "node --test test/",
     "universal": "napi universal",
     "version": "napi version"
   },
