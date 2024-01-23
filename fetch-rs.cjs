@@ -295,8 +295,9 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { fetchWithStr, fetchWithRequest, fetchWithStrAndInit, fetchWithRequestAndInit } = nativeBinding
+const { Request, fetchWithStr, fetchWithRequest, fetchWithStrAndInit, fetchWithRequestAndInit } = nativeBinding
 
+module.exports.Request = Request
 module.exports.fetchWithStr = fetchWithStr
 module.exports.fetchWithRequest = fetchWithRequest
 module.exports.fetchWithStrAndInit = fetchWithStrAndInit

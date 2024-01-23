@@ -1,4 +1,4 @@
-import { fetchWithStr, fetchWithRequest, fetchWithStrAndInit, fetchWithRequestAndInit } from './fetch-rs.cjs';
+import { fetchWithStr, fetchWithRequest, fetchWithStrAndInit, fetchWithRequestAndInit, Request } from './fetch-rs.cjs';
 
 export function fetch (input, init) {
   if (typeof input === 'string') {
@@ -13,3 +13,5 @@ export function fetch (input, init) {
     return fetchWithRequest(input);
   }
 }
+
+export { Request } from './fetch-rs.cjs'
